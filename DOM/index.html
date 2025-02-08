@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Aula 01</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta http-equiv="refresh" content="5"> é Possivel usar url no content--> 
+        <style>
+            .bg-blue{
+                background-color: rgb(31, 31, 224);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- <h1 onclick="alert('Aula DOM!');">Aula DOM</h1> -->
+        <h1 id="titulo" class="bg-blue">Aula DOM</h1>
+
+
+        <form id="cadastrarJogo">
+            <label for="none">Nome do jogo</label>
+            <input type="text" name="nome" id="nome">
+            <br><br>
+            <label for="ano">Ano de Lançamento</label>
+            <input type="text" name="ano" id="ano">
+            <br><br>
+            <label for="genero">Genero:</label>
+            <input type="text" name="genero" id="genero">
+            <br><br>
+            <button>Adicionar Jogo</button>
+        </form>
+
+        <hr>
+
+        <h2>Lista de Jogos</h2>
+
+
+        <ul id="ListaDeJogos"></ul>
+
+        <!-- <button id="adicionarJogo">Adicionar Jogos</button> -->
+
+        <script src="./index.js" type="module">
+        </script>
+    </body>
+</html>
